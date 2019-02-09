@@ -12,6 +12,7 @@ import Foundation
 //    print("A")
 //}
 
+//**************
 var s : String = "Hello"
 
 //we cannot have nil in below
@@ -34,4 +35,39 @@ print(s.hasSuffix("me"))
 print(s.lowercased())
 print(s.uppercased())
 
+//**************
+
+for c in s{
+    print(c)
+}
+
+var x = 5...10
+
+for i in x{
+    print(i)
+}
+print(x)
+
+
+var t1 = 1...
+print(t1)
+
+// closed range 1...20
+// partial Range upto 20 ...
+// partial Range from ...60
+
+for i in t1{
+    print (i)
+    if(i==5){
+        break
+    }
+}
+
+
+var y = ...50
+if(y.contains(51)){
+    print("true")
+}else{
+    print("false")
+}
 
