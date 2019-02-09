@@ -129,3 +129,70 @@ z.append(5001)
 print(z)
 
 print("***********")
+print("***********")
+
+/************/
+
+
+
+var a = [1,2,3,4,5]
+var temp = Int()
+
+for h in 0..<a.count
+{
+    for p in 0..<a.count{
+        temp = a[h]*a[p]
+        temp = temp*a[p]
+    }
+    print(temp)
+}
+
+print("SET******")
+
+var s1 = Set<String>()
+s1.insert("Canada")
+s1.insert("Europe")
+s1.insert("India")
+s1.insert("China")
+print(s1)
+
+s1.insert("India")
+print(s1)
+
+print("Dic **********")
+var d = [1:"Hello 1",2:"Hello 2"]
+print(d)
+d[3] = "Hello 3"
+print(d)
+print(d[4])
+
+var country = Dictionary<String, String>()
+country.updateValue("India", forKey: "IND")
+country.updateValue("China", forKey: "CHA")
+country.updateValue("Canada", forKey: "CAN")
+
+print(country)
+
+for i in country{
+    print(i)
+    print(i.key, i.value)
+}
+
+for (k, v) in country
+{
+    print(k,v)
+}
+
+for (_, v) in country
+{
+    print(v)
+}
+for (k) in country.keys
+{
+    print(k)
+}
+
+//delete all elements
+d = [:]
+print(d.count)
+d.removeAll()
